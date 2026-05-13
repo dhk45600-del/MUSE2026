@@ -5,25 +5,19 @@
   <title></title>
   <style>
 <style>
-    body, html {
+    <style>
+    body {
       margin: 0;
       padding: 0;
-      width: 100%;
-      height: 100%;
-      background: black;
-      /* 이미지를 화면 중앙에 배치 */
+      background-color: black; /* 여백을 검정색으로 설정 */
       display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden; /* 스크롤바가 생기지 않게 방지 */
+      flex-direction: column;
+      align-items: center;    /* 이미지가 화면 중앙에 오도록 설정 */
     }
 
     img {
-      /* 핵심: 가로/세로 중 화면에 먼저 닿는 쪽을 기준으로 크기 조절 */
-      max-width: 100vw;  /* 화면 너비보다 커지지 않음 */
-      max-height: 100vh; /* 화면 높이보다 커지지 않음 */
-      width: auto;       /* 비율 유지 */
-      height: auto;      /* 비율 유지 */
+      width: 100%;            /* 가로 길이를 스크롤바 제외 화면에 꽉 맞춤 */
+      height: auto;           /* 가로 비율에 맞춰 세로 길이는 자동 조절 */
       display: block;
     }
         
