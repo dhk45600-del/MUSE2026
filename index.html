@@ -2,22 +2,30 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>포스터 보기</title>
   <style>
-    body {
+    body, html {
       margin: 0;
+      padding: 0;
+      height: 100%; /* 화면 높이를 100%로 설정 */
+      overflow: hidden; /* 스크롤바 방지 */
       background: black;
     }
-    img {
+    object {
       width: 100%;
-      height: auto;
+      height: 100%;
       display: block;
     }
   </style>
 </head>
 <body>
 
-<img src="poster.pdf">
+  <!-- poster.pdf 파일을 화면에 표시 -->
+  <object data="poster.pdf" type="application/pdf">
+    <p>이 브라우저에서는 PDF를 표시할 수 없습니다. 
+       <a href="poster.pdf">여기를 클릭하여 PDF를 다운로드하세요.</a>
+    </p>
+  </object>
 
 </body>
 </html>
